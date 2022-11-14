@@ -202,9 +202,14 @@ img{
 .video__container{
     row-gap: 3rem;
     padding: 0 15px;
-    width: 450px;
+    width: 100%;
     margin: 0 auto;
+    justify-content: center;
 }
+
+/* .video__box{
+    width: 450px;
+} */
 
 .video__data{
     position: relative;
@@ -877,131 +882,21 @@ input[type="button"].form-submit {
     line-height: 1.7;
 }
 
-/*=============== FOOTER ===============*/
-.footer {
-    padding: 30px 15px 126px;
-    background: #212121;
-}
-
-.footer .footer-in {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.footer .footer-online {
-    position: fixed;
-    width: 100%;
-    max-width: 100%;
-    left: 0;
-    bottom: -1px;
-    margin: 0;
-    padding: 0;
-    z-index: 1040;
-}
-
-.header div, .footer div {
-    transition: all 0s;
-}
-
-.footer .footer-online .txt {
-    padding: 10px;
-    margin: 0;
-    background: #212121;
-    color: #fff;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-weight: normal;
-    line-height: 1.4;
-}
-
-.footer .line-btn {
-    background: #42c507;
-    box-shadow: inset 0 -5px 0px rgb(0 0 0 / 30%);
-}
-
-.footer .footer-online-btn img {
-    width: 20px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.footer .btn-outer {
-    overflow: hidden;
-    padding: 0 8px 8px;
-    background: #212121;
-}
-
-.footer .footer-online-btn {
-    position: relative;
-    padding: 13px 0 16px;
-    font-family: Arial, "微軟正黑體", Helvetica, sans-serif !important;
-    color: #fff;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 50em;
-    letter-spacing: 1px;
-    width: calc(49% - 4px);
-    margin: 0 2px;
-    padding: 10px 0 13px;
-    font-size: 14px;
-}
-
-.footer-follow {
-    position: relative;
-    font-size: 14px;
-    margin-bottom: 30px;
-    display: inline-block;
-}
-
-.footer-follow:after {
-    content: "";
-    width: 1.2em;
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    margin-left: -12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.footer .footer-social i {
-    background: #000;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 10px;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    place-items: center;
-    margin: 0 6px;
-    line-height: 28px;
-    display: inline-grid;
-}
-
-.footer .footer-social i img {
-    height: 18px;
-    opacity: .7;
-}
-
-.footer .footer-social a {
-    font-size: 0em;
-}
-
-
 
 /*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 550px){
+    .pc_title_1{
+        padding: 30px;
+    }
+    .pc_titles{
+        padding: 0;
+    }
+}
+
 @media screen and (min-width: 578px){
     .intro h2{
         font-size: 1.3em;
         line-height: 1.8;
-    }
-
-    .footer .footer-online {
-        padding: 40px 15px;
-        width: 520px;
-        max-width: 100%;
-        margin: 0 auto;
     }
 }
 
